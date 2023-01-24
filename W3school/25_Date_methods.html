@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data = new Date();
+
+        // document.write(data.getDate())
+        // document.write(data.getMonth() + 1)
+        // document.write(data.getFullYear())
+
+        //document.write(data.getDate() + "/" + (data.getMonth() + 1) + "/" + data.getFullYear()+ "<br/><br/><br/>")
+
+        document.write(data.toString());
+        document.write('<hr/>');
+        data.setDate(data.getDate() + 1000);
+        document.write(data.toString());
+
+        document.write('<hr/>');
+        document.write('<hr/>');
+
+        var data1 = new Date(2017, 0, 15);
+
+        var data2 = new Date(2018, 1, 23);
+
+        document.write(data1.toString());
+        document.write('<hr/>');
+        document.write(data2.toString());
+
+        document.write('<hr/>');
+        document.write('<hr/>');
+
+        // conversão de data
+
+        document.write(data1.getTime());
+        document.write('<hr/>');
+        document.write(data2.getTime());
+
+        document.write('<br/>');
+        document.write('<hr/>');
+
+        // calcular de data2 - data1
+
+        var ms_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+        document.write(ms_entre_datas);
+        document.write('<br/>');
+        document.write('<hr/>');
+        document.write('<br/>');
+        document.write('<hr/>');
+        var ms_por_dia = (1*24*60*60*1000)
+        
+        
+        document.write(Math.round(ms_entre_datas / ms_por_dia))
+
+    </script>
+</body>
+</html>

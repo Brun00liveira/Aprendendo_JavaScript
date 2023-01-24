@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- The let keyword was introduced in ES6 (2015).
+
+Variables defined with let cannot be Redeclared.
+
+Variables defined with let must be Declared before use.
+
+Variables defined with let have Block Scope. -->
+<h2>Cannot be Redeclared</h2>
+<!-- once that let already been declared, it can't redeclared-->
+<script>
+// an error will be thrown when you try redeclared a variable
+    let x = 2;
+
+    let x = 'bruno';
+// x have error
+    document.write(x);
+    console.log(x);
+// using the var you can
+
+</script>
+<h2> Block scope {} </h2>
+
+<script>
+    // if you use the variable inside the block you cannot call it outside.
+    {
+        let u = 4; 
+        var a = 10;
+        // it appear
+        document.write(u+'<br/>');
+    }
+    
+    //var a
+    document.write(a);
+    // it not appear
+    document.write(u);
+    
+</script>
+</body>
+</html>

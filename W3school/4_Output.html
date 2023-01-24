@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <!-- Using innerHTML -->
+    <h1>Using inner HTML</h1>
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').innerHTML = 5 + 5;
+    </script>
+
+    <!-- Using Document.write() -->
+    <h1>Using Document.write</h1>
+    <script>
+        document.write("Hello World");
+    </script>
+    <!-- Using document.write() after an already written HTML document , will delete all written in html -->
+    <h2>Hi</h2>
+    <p>Whole and entire have the same meaning</p>
+
+    <button type="button"
+    onclick="document.write(4+3)">Click here!
+    <!-- everything has been erased -->
+    </button>
+
+    <!--Using window.alert()-->
+    <!-- all values,properies and methods are belong to window alert only -->
+    <script>
+        window.alert('This is a window alert')
+    </script>
+
+    <!-- Using Window.print() -->
+    <h2>Using Window.print()</h2>
+    <button onclick="window.print()">Print this page</button>
+
+    <!-- Using console.log() -->
+    <!-- the console.log is showed in console browser -->
+    <script>
+        console.log("Fatal Error");
+    </script>
+
+
+</body>
+</html>
