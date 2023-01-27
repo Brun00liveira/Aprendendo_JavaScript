@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The first thing that we'll learn is select elements</h1>
+    <input 
+        type="text" 
+        placeholder="type your name"
+        id="user_name"
+        class="text_field"
+        name="name" 
+        
+    />
+    <br/> <br/> 
+    <span style="color:brown;"> document.getElementById => </span> <span>It select a id of node</span><br/>
+    <span style="color:brown;"> document.getElementsByTagName => </span> <span>It select a id of TagName</span><br/>
+    <span style="color:brown;"> document.getElementsByClassName => </span> <span>It select a id of ClassName</span><br/>
+    <span style="color:brown;"> document.getElemenstByName => </span> <span>It select a id of Name</span><br/><br/>
+<script>
+   console.log(document.getElementById('user_name'))
+   console.log(document.getElementsByTagName('input'))
+   console.log(document.getElementsByClassName('text_field'))
+   console.log(document.getElementsByName('name'))
+</script>
+</body>
+</html>
