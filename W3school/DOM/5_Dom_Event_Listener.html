@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .style{
+            color:black;
+            background: yellow;
+            border: solid 2px black;
+            width:100px;
+        }
+        .style1{
+            color:black;
+            background: blue;
+            border: solid 2px black;
+            width:100px;
+            
+        }
+        .style2{
+            color:black;
+            background: green;
+            border: solid 2px black;
+            width:100px;
+            
+        }
+    </style>
+    
+</head>
+<body>
+
+    <button type="button" class="style" id="myBtn" >Click here</button>
+
+    <script>
+        
+        document.getElementById('myBtn').addEventListener('click',change)
+    
+    function change() {
+        document.getElementById('myBtn').className = 'style1'
+    }
+</script>
+</body>
+</html>

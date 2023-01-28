@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Caractere(){
+            // select type value
+            // save the value in document.
+            var caractere = document.getElementById('open').value
+            // clean type field
+            document.getElementById('open').value = '';
+            // clean the blanks space in out of strings
+            
+
+            if(isNaN(caractere)){
+                document.getElementById('number').value += caractere
+            }else{
+                document.getElementById('text').value += caractere
+            }
+        }
+    </script>
+</head>
+<body>
+    <input 
+        type="text" 
+        placeholder="type a caractere here" 
+        onkeyup="Caractere()"
+        id="open"
+    />
+    <hr/>
+    <label>Letters:</label>
+    <input id="number"type="text" disabled="disabled"/>
+    
+    <label>Number:</label>
+    <input id="text" type="text" disabled="disabled"/>
+
+</body>
+</html>

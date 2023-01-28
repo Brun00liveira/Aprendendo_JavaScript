@@ -21,11 +21,21 @@
     <span style="color:brown;"> document.getElementsByTagName => </span> <span>It select a id of TagName</span><br/>
     <span style="color:brown;"> document.getElementsByClassName => </span> <span>It select a id of ClassName</span><br/>
     <span style="color:brown;"> document.getElemenstByName => </span> <span>It select a id of Name</span><br/><br/>
+
+    <p id="x">ElementById</p>
+    <p id="x">ElementsByTagName</p>
+    
 <script>
    console.log(document.getElementById('user_name'))
    console.log(document.getElementsByTagName('input'))
    console.log(document.getElementsByClassName('text_field'))
    console.log(document.getElementsByName('name'))
+
+   //ElementById
+
+   document.getElementById("x").style.color = "blue"
+   document.getElementsByTagName("p").style.color = "blue"
+
 </script>
 </body>
 </html>
