@@ -1,0 +1,11 @@
+package asaf;
+
+public class caaaa {
+
+	public static void main(String[] args) {
+		double x = 10.434535;
+		// TODO Auto-generated method stub
+		System.out.printf("%.2f\n", x);
+	}
+
+}
